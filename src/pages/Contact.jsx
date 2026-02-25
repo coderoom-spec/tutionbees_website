@@ -12,7 +12,7 @@ const Contact = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
-                        CONTACT US | COIMBATORE TUITION CENTER
+                        CONTACT US
                     </motion.h1>
                     <p>We're here to help you achieve your academic goals.</p>
                 </div>
@@ -54,7 +54,7 @@ const Contact = () => {
                             <div className="map-placeholder">
                                 <div className="map-box">
                                     <iframe
-                                        src="https://maps.google.com/maps?q=2nd%20floor,%20GM%20COMPLEX,%20Mettupalayam%20Rd,%20Themaiyan%20Street,%20Koundampalayam,%20Coimbatore,%20Tamil%20Nadu%20641030&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                        src="https://maps.google.com/maps?q=GM%20Complex,%20Mettupalayam%20Rd,%20Themaiyan%20Street,%20Koundampalayam,%20Coimbatore,%20Tamil%20Nadu%20641030&t=&z=17&ie=UTF8&iwloc=&output=embed"
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
