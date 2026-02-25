@@ -1,0 +1,18 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="circle">
+      <circle cx="16" cy="16" r="16" />
+    </clipPath>
+  </defs>
+  <!-- Optional: background circle -->
+  <!-- <circle cx="16" cy="16" r="16" fill="#000" /> -->
+  
+  <g transform="translate(2, 2) scale(0.2)">
+    <!-- Scale factor: 28 / 140 = 0.2 approx -->
+    <!-- Using the cap design from the logo -->
+    <path d="M70 5 L140 40 L70 75 L0 40 Z" fill="#F39200" />
+    <path d="M28 50 C28 50 28 95 70 95 C112 95 112 50 112 50" fill="#F39200" />
+    <path d="M30 62 Q70 70 110 62" fill="none" stroke="black" stroke-width="12" stroke-linecap="round" />
+    <path d="M34 78 Q70 86 106 78" fill="none" stroke="black" stroke-width="12" stroke-linecap="round" />
+  </g>
+</svg>
