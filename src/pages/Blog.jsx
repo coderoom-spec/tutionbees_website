@@ -1,67 +1,76 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-
-const blogPosts = [
-    {
-        id: 1,
-        date: 'Oct 12, 2025',
-        title: 'The Impact of Online Math Tutoring on Academic Achievement',
-        desc: 'How one-on-one digital sessions are changing the way students learn mathematics and achieve their dream scores.',
-        img: 'https://images.unsplash.com/photo-1596495573175-975a6a9bb8be?q=80&w=600&h=400&auto=format&fit=crop'
-    },
-    {
-        id: 2,
-        date: 'Sep 28, 2025',
-        title: 'Master Math With TuitionBees Online Tutoring – And Feel the Difference',
-        desc: 'Techniques and strategies used by our top tutors to make math easy and fun for students of all grades.',
-        img: 'https://images.unsplash.com/photo-1501504905992-0b32066d9972?q=80&w=600&h=400&auto=format&fit=crop'
-    },
-    {
-        id: 3,
-        date: 'Aug 15, 2025',
-        title: 'AI Generation in 2026: Shaping the Future of Learning',
-        desc: 'Shaping the future of learning for school kids with cutting-edge AI tools and personalized coaching.',
-        img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&h=400&auto=format&fit=crop'
-    }
-];
+import { Calendar, User, ArrowRight } from 'lucide-react';
+import { blogPosts } from '../data/blogData';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     return (
         <div className="blog-page">
-            <section className="subpage-hero">
+            {/* Hero Section */}
+            <section className="blog-hero">
                 <div className="container">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                    >
-                        TUTORING BLOGS & STUDY GUIDES | CBSE & IGCSE
-                    </motion.h1>
-                    <p>Stay updated with the latest in education and tutoring.</p>
+                    <div className="blog-hero-grid">
+                        <motion.div
+                            className="blog-hero-content"
+                            initial={{ opacity: 0, x: -30 }}
+                            animate={{ opacity: 1, x: 0 }}
+                        >
+                            <h1>BLOG</h1>
+                            <p>
+                                Our tailored virtual classrooms meet your child's unique needs! Enjoy
+                                peace of mind with reliable online support from our expert tutors, just a
+                                click away. No more stress—we provide top-notch tuition that empowers
+                                your child for success, wherever they are!
+                            </p>
+                        </motion.div>
+                        <motion.div
+                            className="blog-hero-image"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                        >
+                            <img
+                                src="/images/blog/blog_hero_illustration_1772121781699.png"
+                                alt="Blog Illustration"
+                                style={{ width: '100%', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.2))' }}
+                            />
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
-            <section className="blog-grid-section">
+            {/* Blog Grid Section */}
+            <section style={{ padding: '80px 0', background: '#fcfcfc' }}>
                 <div className="container">
-                    <div className="grid grid-3">
+                    <div className="grid grid-3" style={{ gap: '30px' }}>
                         {blogPosts.map((post) => (
-                            <motion.article
+                            <Link
+                                to={`/blog/${post.slug}`}
                                 key={post.id}
-                                className="blog-card"
-                                whileHover={{ translateY: -10 }}
+                                style={{ textDecoration: 'none', color: 'inherit' }}
                             >
-                                <div className="blog-img">
-                                    <img src={post.img} alt={post.title} />
-                                </div>
-                                <div className="blog-content">
-                                    <span className="blog-date">{post.date}</span>
-                                    <h4>{post.title}</h4>
-                                    <p>{post.desc}</p>
-                                    <a href="#" className="read-more">
-                                        Read More <ArrowRight size={14} style={{ display: 'inline', marginLeft: '5px' }} />
-                                    </a>
-                                </div>
-                            </motion.article>
+                                <motion.article
+                                    className="blog-card-new"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    style={{ height: '100%' }}
+                                >
+                                    <div className="blog-card-img">
+                                        <img src={post.img} alt={post.title} />
+                                    </div>
+                                    <div className="blog-card-body">
+                                        <div className="blog-card-meta">
+                                            <span><Calendar className="meta-icon" size={14} /> {post.date}</span>
+                                            <span><User className="meta-icon" size={14} /> {post.author}</span>
+                                        </div>
+                                        <h3 style={{ fontSize: '18px', fontWeight: '800' }}>{post.title}</h3>
+                                        <div style={{ marginTop: '15px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-red)', fontWeight: '700', fontSize: '14px' }}>
+                                            Read More <ArrowRight size={14} />
+                                        </div>
+                                    </div>
+                                </motion.article>
+                            </Link>
                         ))}
                     </div>
                 </div>

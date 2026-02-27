@@ -72,10 +72,34 @@ const curricula = [
         ]
     },
     {
+        title: "UK Curriculum",
+        subjects: [
+            "Mathematics", "English Literature", "English Language", "Biology",
+            "Chemistry", "Physics", "Combined Science", "Further Mathematics",
+            "Computer Science", "History", "Geography", "Economics", "Business Studies"
+        ]
+    },
+    {
         title: "Australian Curriculum",
         subjects: [
             "Math", "Advanced Math", "Science", "English",
             "Physics", "Chemistry", "Biology", "Economics", "Business Management"
+        ]
+    },
+    {
+        title: "Singapore Curriculum",
+        subjects: [
+            "Mathematics", "Additional Mathematics", "Physics", "Chemistry",
+            "Biology", "Science", "Economics", "English Language",
+            "Singapore-Cambridge GCE O Level", "Singapore-Cambridge GCE A Level"
+        ]
+    },
+    {
+        title: "CAIE & EDEXCEL Tuition",
+        subjects: [
+            "Mathematics", "Physics", "Chemistry", "Biology",
+            "English Language", "English Literature", "Economics", "Business Studies",
+            "Further Mathematics", "Computer Science"
         ]
     }
 ];

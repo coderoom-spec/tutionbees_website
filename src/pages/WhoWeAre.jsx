@@ -21,11 +21,11 @@ const WhoWeAre = () => {
                 <div className="container">
                     <div className="grid grid-2" style={{ gap: '60px', alignItems: 'center' }}>
                         <div className="about-image">
-                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="TuitionBees Tutoring Team" style={{ width: '100%', borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Tuition Bees Tutoring Team" style={{ width: '100%', borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
                         <div className="about-text">
                             <h2 className="section-title" style={{ textAlign: 'left' }}>Our Mission</h2>
-                            <p>At TuitionBees, our mission is to provide quality teaching to help students achieve their dream scores. We believe that every student has the potential to excel when given the right tools and guidance.</p>
+                            <p>At Tuition Bees, our mission is to provide quality teaching to help students achieve their dream scores. We believe that every student has the potential to excel when given the right tools and guidance.</p>
                             <p>Since our inception, we have taught over 5000+ students across various curriculums including CBSE, ICSE, IGCSE, and IB. Our 1-on-1 tutoring model ensures that each student gets the individual attention they deserve.</p>
 
                             <div className="value-cards" style={{ marginTop: '30px' }}>

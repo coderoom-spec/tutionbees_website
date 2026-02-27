@@ -31,6 +31,10 @@ const Hero = () => {
                             <span>Reviews 5/5</span>
                             <div className="stars">★★★★★</div>
                         </div>
+                        <div className="badge">
+                            <img src="/icse3.webp" alt="CISCE" style={{ height: '50px', marginBottom: '8px', objectFit: 'contain' }} />
+                            <span style={{ fontSize: '12px' }}>Certified Curriculum</span>
+                        </div>
 
                     </div>
                 </motion.div>

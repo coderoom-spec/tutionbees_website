@@ -9,6 +9,7 @@ const Footer = () => {
             <div style={{ background: 'white', padding: '40px 0', marginBottom: '60px' }}>
                 <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '40px' }}>
                     <img src="/cbse.webp" alt="CBSE" style={{ height: '50px', objectFit: 'contain' }} />
+                    <img src="/icse3.webp" alt="CISCE" style={{ height: '60px', objectFit: 'contain' }} />
                     <img src="/isc-logo.webp" alt="ISC" style={{ height: '60px', objectFit: 'contain' }} />
                     <img src="/gcse_top.webp" alt="GCSE" style={{ height: '50px', objectFit: 'contain' }} />
                     <img src="/ib.webp" alt="IB" style={{ height: '50px', objectFit: 'contain' }} />
@@ -24,7 +25,7 @@ const Footer = () => {
                     <Link to="/" style={{ display: 'inline-block', marginBottom: '20px', background: 'white', padding: '8px', borderRadius: '4px' }}>
                         <img
                             src="/Tution bees logo.jpg"
-                            alt="TuitionBees Logo"
+                            alt="Tuition Bees Logo"
                             style={{
                                 height: '40px',
                                 display: 'block'
@@ -42,8 +43,14 @@ const Footer = () => {
                         <li style={{ marginBottom: '12px' }}><Link to="/curriculum/cbse" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>CBSE</Link></li>
                         <li style={{ marginBottom: '12px' }}><Link to="/curriculum/icse-isc" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>ICSE/ISC</Link></li>
                         <li style={{ marginBottom: '12px' }}><Link to="/curriculum/igcse" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>IGCSE</Link></li>
-                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/ib" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>IB</Link></li>
-                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/us" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>US Curriculum</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/ib" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>INTERNATIONAL BACCALAUREATE - IB</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/us" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>US CURRICULUM</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/uk" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>UK CURRICULUM</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/australian" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>AUSTRALIAN CURRICULUM</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/singapore" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>SINGAPORE CURRICULUM</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/canadian" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>CANADIAN CURRICULUM</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/a-level" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>AS AND A LEVEL</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/curriculum/caie-edexcel" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>CAIE & EDEXCEL</Link></li>
                     </ul>
                 </div>
 
@@ -55,17 +62,19 @@ const Footer = () => {
                         <li style={{ marginBottom: '12px' }}><Link to="/subjects/english" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>English Tuition</Link></li>
                         <li style={{ marginBottom: '12px' }}><Link to="/subjects/physics" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>Physics Tuition</Link></li>
                         <li style={{ marginBottom: '12px' }}><Link to="/subjects/chemistry" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>Chemistry Tuition</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/subjects/computer-science" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>Computer Science</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/study-portal" style={{ color: '#999', textDecoration: 'none', fontSize: '14px', fontWeight: 'bold' }}>Study Portal</Link></li>
                     </ul>
                 </div>
 
                 <div className="footer-col">
                     <h4 style={{ color: 'white', marginBottom: '25px', fontWeight: '700' }}>Exams</h4>
                     <ul style={{ listStyle: 'none', padding: 0 }}>
-                        <li style={{ marginBottom: '12px' }}><Link to="/exams/psat" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>PSAT</Link></li>
-                        <li style={{ marginBottom: '12px' }}><Link to="/exams/sat" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>SAT</Link></li>
-                        <li style={{ marginBottom: '12px' }}><Link to="/exams/act" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>ACT</Link></li>
-                        <li style={{ marginBottom: '12px' }}><Link to="/exams/ap" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>AP TEST</Link></li>
-                        <li style={{ marginBottom: '12px' }}><Link to="/exams/neet" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>NEET</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/exams/psat" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>PSAT Exam</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/exams/sat" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>SAT Exam</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/exams/act" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>ACT Exam</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/exams/ielts" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>IELTS</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/exams/naplan" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>NAPLAN</Link></li>
                     </ul>
                 </div>
             </div>
@@ -99,7 +108,7 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div style={{ background: '#111', padding: '20px 0' }}>
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-                    <p style={{ fontSize: '13px', margin: 0 }}>&copy; {new Date().getFullYear()} TuitionBees Online Tutoring. All rights reserved.</p>
+                    <p style={{ fontSize: '13px', margin: 0 }}>&copy; {new Date().getFullYear()} Tuition Bees Online Tutoring. All rights reserved.</p>
                     <div className="social-links" style={{ display: 'flex', gap: '25px', alignItems: 'center' }}>
                         <a href="#" style={{ color: 'white' }}><Facebook size={20} /></a>
                         <a href="#" style={{ color: 'white' }}><Youtube size={20} /></a>

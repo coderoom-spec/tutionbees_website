@@ -57,7 +57,7 @@ const SubPage = () => {
 
     const prepPoints = [
         { t: "Targeted Revision Plans", d: "We help students create effective revision plans that cover all the essential topics, ensuring they are well-prepared for their exams." },
-        { t: "Mock Tests", d: "TuitionBees provides mock tests that simulate real exam conditions, helping students manage time efficiently and gain confidence in their exam taking abilities." },
+        { t: "Mock Tests", d: "Tuition Bees provides mock tests that simulate real exam conditions, helping students manage time efficiently and gain confidence in their exam taking abilities." },
         { t: "Doubt Clearing Sessions", d: "We offer regular doubt-clearing sessions where students can get their queries resolved, ensuring they have a thorough understanding of each subject." },
         { t: "Performance Tracking", d: "Our platform tracks student performance over time, providing insights into strengths and areas that need improvement. This data-driven approach helps in tailoring the learning experience to maximize success." },
         { t: "Stress Management Techniques", d: "We also provide guidance on managing exam stress through relaxation techniques and time management strategies, helping students approach their exams with a calm and focused mind-set." }
@@ -65,9 +65,9 @@ const SubPage = () => {
 
     const faqs = [
         { q: `What is the structure of the ${title} curriculum?`, a: `The ${title} curriculum is designed to provide a comprehensive and balanced education, focusing on both academic excellence and practical skills across core subjects.` },
-        { q: "How does online tutoring work with TuitionBees?", a: "Our platform uses interactive virtual classrooms where students meet 1-on-1 with certified tutors for real-time instruction and collaboration." },
-        { q: `Are the tutors at TuitionBees qualified to teach ${title} students?`, a: "Yes, all our tutors undergo rigorous selection and training, specializing in specific boards and age groups to ensure expertise." },
-        { q: "How can I track my child's progress with TuitionBees?", a: "We provide regular performance reports, session feedback, and a dedicated parent dashboard to monitor growth and attendance." },
+        { q: "How does online tutoring work with Tuition Bees?", a: "Our platform uses interactive virtual classrooms where students meet 1-on-1 with certified tutors for real-time instruction and collaboration." },
+        { q: `Are the tutors at Tuition Bees qualified to teach ${title} students?`, a: "Yes, all our tutors undergo rigorous selection and training, specializing in specific boards and age groups to ensure expertise." },
+        { q: "How can I track my child's progress with Tuition Bees?", a: "We provide regular performance reports, session feedback, and a dedicated parent dashboard to monitor growth and attendance." },
         { q: "Is online tutoring as effective as traditional classroom learning?", a: "Absolutely! The personalized 1-on-1 focus often yields better results than crowded classrooms, allowing for tailored pacing and immediate feedback." }
     ];
 
@@ -145,7 +145,7 @@ const SubPage = () => {
                             <button className="btn btn-accent" style={{ padding: '12px 30px' }}>BOOK A FREE DEMO</button>
                         </div>
                         <div style={{ position: 'relative' }}>
-                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop" alt="Online Tutoring" style={{ width: '100%', borderRadius: '15px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+                            <img src="/images/blog/media__1772124550264.png" alt="Online Tutoring" style={{ width: '100%', borderRadius: '15px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ const SubPage = () => {
                     <div className="grid grid-2" style={{ alignItems: 'flex-start' }}>
                         <div>
                             <h2 style={{ fontSize: '32px', fontWeight: '800', color: '#000000', marginBottom: '40px', lineHeight: '1.3' }}>
-                                How Can TuitionBees Help with Your {title} Online Tutoring Exam Preparations?
+                                How Can Tuition Bees Help with Your {title} Online Tutoring Exam Preparations?
                             </h2>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '25px' }}>
                                 {prepPoints.map((point, i) => (
@@ -173,7 +173,7 @@ const SubPage = () => {
                         <div style={{ textAlign: 'center' }}>
                             <div style={{ position: 'relative', background: '#fff', padding: '20px', borderRadius: '15px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)' }}>
                                 <img
-                                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop"
+                                    src="/images/blog/media__1772124561160.png"
                                     alt="Exam Preparation"
                                     style={{ width: '100%', borderRadius: '10px' }}
                                 />
@@ -243,7 +243,7 @@ const SubPage = () => {
                             </div>
                             <div style={{ textAlign: 'center', position: 'relative' }}>
                                 <img
-                                    src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=800&auto=format&fit=crop"
+                                    src="/images/blog/blog_hero_illustration_1772121781699.png"
                                     alt="Student Learning on Laptop"
                                     style={{ width: '100%', borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
                                 />
@@ -256,7 +256,7 @@ const SubPage = () => {
             {/* Features Grid */}
             <section style={{ padding: '100px 0', background: 'white' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 style={{ fontSize: '36px', fontWeight: '801', marginBottom: '50px', color: '#2c3e50' }}>Why Choose TuitionBees ONLINE TUTORING for your {title} Tuition?</h2>
+                    <h2 style={{ fontSize: '36px', fontWeight: '801', marginBottom: '50px', color: '#2c3e50' }}>Why Choose Tuition Bees ONLINE TUTORING for your {title} Tuition?</h2>
                     <div className="grid grid-3" style={{ gap: '30px' }}>
                         {[
                             { title: "Expert Tutors", icon: <Users size={48} />, desc: "Access to experienced tutors well-versed in the specific curriculum and its requirements." },

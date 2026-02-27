@@ -5,6 +5,8 @@ import Stars from '../components/Stars';
 import AdvantagesSection from '../components/AdvantagesSection';
 import HowItWorks from '../components/HowItWorks';
 import SubjectsCurriculums from '../components/SubjectsCurriculums';
+import OurSubjects from '../components/OurSubjects';
+import ExamsSection from '../components/ExamsSection';
 import Testimonials from '../components/Testimonials';
 import { motion } from 'framer-motion';
 
@@ -56,7 +58,9 @@ const Home = () => {
             <Stars />
             <AdvantagesSection />
             <HowItWorks />
+            <OurSubjects />
             <SubjectsCurriculums />
+            <ExamsSection />
             <Testimonials />
         </>
     );
