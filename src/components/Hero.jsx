@@ -13,8 +13,8 @@ const Hero = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 style={{ color: 'var(--text-dark)', fontWeight: 900, marginBottom: '5px' }}>BEST ONLINE TUITION & TUTORING SERVICES</h1>
-                    <h2 className="hero-subtitle" style={{ fontWeight: 800 }}>EXPERT <span style={{ color: 'var(--accent-red)' }}>CBSE & IGCSE CLASSES</span> IN COIMBATORE</h2>
+                    <h1 style={{ color: 'var(--text-dark)', fontWeight: 900, marginBottom: '5px' }}>Achieve Academic Success</h1>
+                    <h2 className="hero-subtitle" style={{ fontWeight: 800 }}>with <span style={{ color: 'var(--accent-red)' }}>Top-Notch Online Tutoring</span></h2>
                     <ul className="hero-features" style={{ marginTop: '20px' }}>
                         <li><ArrowRight size={18} color="var(--accent-red)" /> Trusted by parents and students globally</li>
                         <li><ArrowRight size={18} color="var(--accent-red)" /> 5000+ students taught and counting</li>
