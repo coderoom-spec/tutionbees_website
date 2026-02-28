@@ -34,7 +34,7 @@ const Header = () => {
                         toggleMobileSubmenu('about');
                     }
                 }}>
-                    About {isMobile ? (activeMobileSubmenu === 'about' ? '−' : '+') : <ChevronDown size={14} />}
+                    About {isMobile ? <span className={`submenu-arrow ${activeMobileSubmenu === 'about' ? 'rotated' : ''}`}>&gt;</span> : <ChevronDown size={14} />}
                 </a>
                 <ul className="dropdown">
                     <li><Link to="/who-we-are" onClick={() => setIsMobileMenuOpen(false)}>Who We Are</Link></li>
@@ -48,7 +48,7 @@ const Header = () => {
                         toggleMobileSubmenu('curriculum');
                     }
                 }}>
-                    Curriculum {isMobile ? (activeMobileSubmenu === 'curriculum' ? '−' : '+') : <ChevronDown size={14} />}
+                    Curriculum {isMobile ? <span className={`submenu-arrow ${activeMobileSubmenu === 'curriculum' ? 'rotated' : ''}`}>&gt;</span> : <ChevronDown size={14} />}
                 </a>
                 <div className="mega-menu">
                     <ul className="mega-list">
@@ -73,7 +73,7 @@ const Header = () => {
                         toggleMobileSubmenu('subjects');
                     }
                 }}>
-                    Subjects {isMobile ? (activeMobileSubmenu === 'subjects' ? '−' : '+') : <ChevronDown size={14} />}
+                    Subjects {isMobile ? <span className={`submenu-arrow ${activeMobileSubmenu === 'subjects' ? 'rotated' : ''}`}>&gt;</span> : <ChevronDown size={14} />}
                 </a>
                 <div className="mega-menu" style={{ width: '1000px' }}>
                     <div className="mega-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
@@ -113,7 +113,7 @@ const Header = () => {
                         toggleMobileSubmenu('exams');
                     }
                 }}>
-                    Exams {isMobile ? (activeMobileSubmenu === 'exams' ? '−' : '+') : <ChevronDown size={14} />}
+                    Exams {isMobile ? <span className={`submenu-arrow ${activeMobileSubmenu === 'exams' ? 'rotated' : ''}`}>&gt;</span> : <ChevronDown size={14} />}
                 </a>
                 <div className="mega-menu">
                     <ul className="mega-list">
@@ -138,7 +138,7 @@ const Header = () => {
                         toggleMobileSubmenu('study-portal');
                     }
                 }}>
-                    Study Portal {isMobile ? (activeMobileSubmenu === 'study-portal' ? '−' : '+') : <ChevronDown size={14} />}
+                    Study Portal {isMobile ? <span className={`submenu-arrow ${activeMobileSubmenu === 'study-portal' ? 'rotated' : ''}`}>&gt;</span> : <ChevronDown size={14} />}
                 </a>
                 <ul className="dropdown">
                     <li><Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link></li>

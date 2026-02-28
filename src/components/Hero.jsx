@@ -26,13 +26,29 @@ const Hero = () => {
                         <Link to="/contact-us" className="btn btn-outline" style={{ padding: '0 30px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px' }}>CONTACT US</Link>
                     </div>
                     <div className="reviews-badges" style={{ marginTop: '40px', borderTop: '1px solid #eee', paddingTop: '30px', display: 'flex', justifyContent: 'center' }}>
-                        <div className="badge" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <a
+                            href="https://share.google/Ftdyw9uUPwoOVGLKA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="badge"
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                textDecoration: 'none',
+                                color: 'inherit',
+                                transition: 'transform 0.2s ease',
+                                cursor: 'pointer'
+                            }}
+                            onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                            onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                        >
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '22px', marginBottom: '8px' }} />
                             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                                 <span style={{ fontWeight: '800', fontSize: '18px' }}>Reviews 5/5</span>
                                 <div className="stars" style={{ fontSize: '18px' }}>★★★★★</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </motion.div>
 

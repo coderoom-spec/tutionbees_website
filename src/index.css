@@ -1060,6 +1060,20 @@ section {
         display: block !important;
         /* Force show when open */
     }
+
+    /* Submenu Arrow Animation */
+    .submenu-arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        font-family: monospace;
+        /* Ensures standard look for > */
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .submenu-arrow.rotated {
+        transform: rotate(90deg);
+    }
 }
 
 @media (max-width: 576px) {
