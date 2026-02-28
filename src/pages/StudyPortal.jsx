@@ -16,12 +16,15 @@ const StudyPortal = () => {
     return (
         <div className="study-portal-page">
             <section className="home-conversion" style={{
-                background: 'linear-gradient(135deg, #1a237e 0%, #0d1245 100%)',
+                background: 'linear-gradient(135deg, #fd6730 0%, #ff930f 100%)',
                 padding: '100px 0',
                 color: 'white',
                 position: 'relative',
                 overflow: 'hidden'
             }}>
+                {/* Abstract Circles */}
+                <div className="abstract-circle" style={{ position: 'absolute', top: '-50px', left: '-50px', width: '300px', height: '300px', border: '40px solid rgba(255,255,255,0.1)', borderRadius: '50%' }}></div>
+                <div className="abstract-circle" style={{ position: 'absolute', bottom: '-100px', right: '10%', width: '400px', height: '400px', border: '60px solid rgba(255,255,255,0.05)', borderRadius: '50%' }}></div>
                 <div className="container conversion-grid" style={{ alignItems: 'center' }}>
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}

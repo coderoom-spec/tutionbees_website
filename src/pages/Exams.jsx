@@ -5,7 +5,14 @@ import { motion } from 'framer-motion';
 const Exams = () => {
     return (
         <div className="exams-page">
-            <section className="subpage-hero" style={{ background: 'linear-gradient(135deg, #0d47a1 0%, #002171 100%)' }}>
+            <section className="subpage-hero" style={{
+                background: 'linear-gradient(135deg, #fd6730 0%, #ff930f 100%)',
+                position: 'relative',
+                overflow: 'hidden'
+            }}>
+                {/* Abstract Circles */}
+                <div className="abstract-circle" style={{ position: 'absolute', top: '-50px', left: '-50px', width: '300px', height: '300px', border: '40px solid rgba(255,255,255,0.1)', borderRadius: '50%' }}></div>
+                <div className="abstract-circle" style={{ position: 'absolute', bottom: '-100px', right: '10%', width: '400px', height: '400px', border: '60px solid rgba(255,255,255,0.05)', borderRadius: '50%' }}></div>
                 <div className="container" style={{ textAlign: 'center', color: 'white', padding: '100px 0' }}>
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}

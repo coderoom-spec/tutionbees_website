@@ -60,6 +60,7 @@ const Footer = () => {
                         <li style={{ marginBottom: '12px' }}><Link to="/exams/act" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>ACT Exam</Link></li>
                         <li style={{ marginBottom: '12px' }}><Link to="/exams/ielts" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>IELTS</Link></li>
                         <li style={{ marginBottom: '12px' }}><Link to="/exams/naplan" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>NAPLAN</Link></li>
+                        <li style={{ marginBottom: '12px' }}><Link to="/exams/jee" style={{ color: '#999', textDecoration: 'none', fontSize: '14px' }}>JEE</Link></li>
                     </ul>
                 </div>
             </div>

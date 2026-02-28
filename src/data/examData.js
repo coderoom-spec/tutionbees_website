@@ -680,5 +680,70 @@ export const examData = {
             { q: "Does the PSAT affect college admissions?", a: "No, colleges do not see PSAT scores; they are for practice and scholarship qualification only." },
             { q: "Is the PSAT identical to the SAT?", a: "It is very similar in style, though shorter and slightly less difficult." }
         ]
+    },
+    'jee': {
+        title: "JEE EXAM",
+        hero: {
+            subtitle: "Start Learning Today",
+            title: "NEED A JEE EXAM TUTOR?",
+            description: "The JEE (Joint Entrance Examination) is one of the most challenging engineering entrance exams globally. Master Physics, Chemistry, and Mathematics with specialized coaching for JEE Main and Advanced."
+        },
+        intro: {
+            title: "JEE Exam Overview",
+            content: "The Joint Entrance Examination (JEE) is the gateway to India's most prestigious engineering institutions. It consists of two stages: JEE Main, for admission to NITs and IIITs, and JEE Advanced, for admission to the elite Indian Institutes of Technology (IITs).",
+            image: "/exam.jpg"
+        },
+        keyFeatures: {
+            title: "KEY FEATURES OF JEE:",
+            intro: "JEE is a multi-stage exam requiring rigorous preparation:",
+            features: [
+                { title: "Two Stages:", content: "JEE Main (Stage 1) and JEE Advanced (Stage 2). Only top qualifiers of JEE Main can appear for Advanced." },
+                { title: "Exam Mode:", content: "Conducted as a Computer-Based Test (CBT) by the National Testing Agency (NTA)." },
+                { title: "Subjects:", content: "Intensive testing in Physics, Chemistry, and Mathematics based on the NCERT curriculum." },
+                { title: "Difficulty Level:", content: "Known for testing conceptual depth, analytical skills, and speed under pressure." },
+                { title: "Counseling (JoSAA):", content: "Centralized admission process for IITs, NITs, and IIITs based on ranks." }
+            ],
+            illustration: "/tutoring-illustration.webp"
+        },
+        scoringSystem: {
+            title: "Performance & Eligibility",
+            points: [
+                "Candidates must have 10+2 with Physics, Chemistry, and Mathematics.",
+                "JEE Main is held multiple times a year (Sessions) to give students more chances.",
+                "Marking usually follows a +4 for correct and -1 for incorrect scheme.",
+                "Top 2,50,000 JEE Main qualifiers are eligible for JEE Advanced."
+            ]
+        },
+        additionalInfo: [
+            { title: "JEE Main Paper 1 & 2:", content: "Paper 1 is for B.E./B.Tech courses, while Paper 2 is for B.Arch and B.Planning." },
+            { title: "Percentile vs Rank:", content: "Results are released as NTA Percentile scores to ensure fairness across multiple shifts." },
+            { title: "Attempt Limits:", content: "Limits on the number of attempts ensure students focus on quality preparation." }
+        ],
+        registryInfo: "Registration is done via the official NTA JEE Main website. JEE Advanced registration happens separately for qualified candidates.",
+        whyChoose: {
+            title: "WHY CHOOSE TUITION BEES ONLINE TUTORING FOR JEE?",
+            cards: [
+                { title: "Specialized JEE Tutors", content: "At Tuition Bees, we have a team of IITian and expert tutors who specialize in JEE preparation. They bring deep insights into the exam patterns and high-level problem-solving techniques." },
+                { title: "Customized Study Modules", content: "We create personalized learning tracks that focus on strengthening weak areas in PCM while reinforcing core concepts for high-weightage topics." },
+                { title: "Advanced Problem Practice", content: "Our coaching includes rigorous practice of previous year questions (PYQs) and higher-order thinking skill (HOTS) problems typical of JEE Advanced." },
+                { title: "Live Doubt Clearing", content: "Students get real-time access to tutors for clearing complex doubts, ensuring no concept remains misunderstood during the preparation phase." },
+                { title: "Time Management Strategies", content: "We teach students how to optimize their 3-hour window, balancing accuracy and speed across all three sections to maximize their percentile." },
+                { title: "Interactive Digital Tools", content: "Our online platform uses virtual whiteboards and digital simulations to make abstract concepts in Physics and Chemistry visual and easy to grasp." },
+                { title: "Performance Analytics", content: "Detailed reports after every mock test help students track their percentile growth and identify time-consuming topics for further refinement." },
+                { title: "Flexible Online Learning", content: "Balance your school board exams and JEE prep with our flexible scheduling, allowing for a stress-free transition between different academic requirements." }
+            ]
+        },
+        detailsTable: [
+            { label: "Conducting Body", value: "NTA (Main) / IITs (Advanced)" },
+            { label: "Core Subjects", value: "Physics, Chemistry, Mathematics" },
+            { label: "Exam Stages", value: "JEE Main & JEE Advanced" },
+            { label: "Recognition", value: "IITs, NITs, IIITs, & Top Govt Colleges" },
+            { label: "Mode of Exam", value: "Computer Based Test (CBT)" },
+            { label: "Eligibility", value: "10+2 with Physics, Chemistry, and Math" }
+        ],
+        faqs: [
+            { q: "How many times can I take JEE Main?", a: "Students can take JEE Main for three consecutive years from their 12th board passing year." },
+            { q: "Is JEE Advanced mandatory for NITs?", a: "No, NIT admissions are based on JEE Main ranks. Advanced is exclusively for IIT admissions." }
+        ]
     }
 };

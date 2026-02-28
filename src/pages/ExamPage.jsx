@@ -93,11 +93,15 @@ const ExamPage = () => {
         <div className="exam-page">
             {/* Red Hero Section */}
             <section className="exam-hero" style={{
-                background: 'linear-gradient(135deg, #F39200 0%, #e68a00 100%)',
+                background: 'linear-gradient(135deg, #fd6730 0%, #ff930f 100%)',
                 padding: '80px 0',
                 color: 'white',
-                position: 'relative'
+                position: 'relative',
+                overflow: 'hidden'
             }}>
+                {/* Abstract Circles */}
+                <div className="abstract-circle" style={{ position: 'absolute', top: '-50px', left: '-50px', width: '300px', height: '300px', border: '40px solid rgba(255,255,255,0.1)', borderRadius: '50%' }}></div>
+                <div className="abstract-circle" style={{ position: 'absolute', bottom: '-100px', right: '10%', width: '400px', height: '400px', border: '60px solid rgba(255,255,255,0.05)', borderRadius: '50%' }}></div>
                 <div className="container">
                     <div className="grid grid-2" style={{ alignItems: 'center', gap: '50px' }}>
                         <motion.div

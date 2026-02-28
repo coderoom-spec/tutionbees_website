@@ -128,6 +128,7 @@ const Header = () => {
                         <li><Link to="/exams/ielts" onClick={() => setIsMobileMenuOpen(false)}>IELTS</Link></li>
                         <li><Link to="/exams/toefl" onClick={() => setIsMobileMenuOpen(false)}>TOEFL</Link></li>
                         <li><Link to="/exams/neet" onClick={() => setIsMobileMenuOpen(false)}>NEET</Link></li>
+                        <li><Link to="/exams/jee" onClick={() => setIsMobileMenuOpen(false)}>JEE</Link></li>
                     </ul>
                 </div>
             </li>
