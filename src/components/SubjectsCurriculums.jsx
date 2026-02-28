@@ -163,7 +163,7 @@ const CurriculumCard = ({ item, index }) => {
                             animate={{ opacity: 1 }}
                             style={{
                                 color: '#444',
-                                fontSize: '15px',
+                                fontSize: '17px',
                                 fontWeight: '500'
                             }}
                         >
@@ -213,7 +213,7 @@ const SubjectsCurriculums = () => {
                         margin: '0 auto',
                         color: '#555',
                         lineHeight: '1.8',
-                        fontSize: '17px'
+                        fontSize: '18px'
                     }}>
                         TuitionBees provides the best online classes for students worldwide. We offer tailored academic sessions for various curricula, including CBSE, IGCSE, A LEVEL, ICSE, ISC, IB, Singapore, US, UK, Australian, and Canadian boards. Our expert tutoring services ensure students excel in exams and receive the best academic and career guidance through our comprehensive online coaching classes.
                     </p>

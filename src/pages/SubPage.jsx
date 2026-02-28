@@ -145,7 +145,7 @@ const SubPage = () => {
                             <button className="btn btn-accent" style={{ padding: '12px 30px' }}>BOOK A FREE DEMO</button>
                         </div>
                         <div style={{ position: 'relative' }}>
-                            <img src="/images/blog/media__1772124550264.png" alt="Online Tutoring" style={{ width: '100%', borderRadius: '15px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+                            <img src="/tutoring-illustration.webp" alt="Online Tutoring" style={{ width: '100%', borderRadius: '15px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
                     </div>
                 </div>
@@ -163,7 +163,7 @@ const SubPage = () => {
                                 {prepPoints.map((point, i) => (
                                     <div key={i} style={{ display: 'flex', gap: '15px' }}>
                                         <span style={{ fontWeight: '800', color: '#333', minWidth: '20px' }}>{i + 1}.</span>
-                                        <p style={{ color: '#555', fontSize: '15px', lineHeight: '1.6' }}>
+                                        <p style={{ color: '#555', fontSize: '18px', lineHeight: '1.6' }}>
                                             <strong style={{ color: '#333' }}>{point.t}:</strong> {point.d}
                                         </p>
                                     </div>
@@ -173,7 +173,7 @@ const SubPage = () => {
                         <div style={{ textAlign: 'center' }}>
                             <div style={{ position: 'relative', background: '#fff', padding: '20px', borderRadius: '15px', boxShadow: '0 10px 40px rgba(0,0,0,0.08)' }}>
                                 <img
-                                    src="/images/blog/media__1772124561160.png"
+                                    src="/exam.jpg"
                                     alt="Exam Preparation"
                                     style={{ width: '100%', borderRadius: '10px' }}
                                 />
@@ -235,8 +235,8 @@ const SubPage = () => {
                                         { t: "Global Acceptance", d: "Widely accepted for higher education missions worldwide." }
                                     ].map((item, i) => (
                                         <div key={i} style={{ display: 'flex', gap: '15px' }}>
-                                            <span style={{ color: 'var(--accent-red)', fontWeight: '900', fontSize: '18px' }}>{i + 1}.</span>
-                                            <p><strong>{item.t}:</strong> {item.d}</p>
+                                            <span style={{ color: 'var(--accent-red)', fontWeight: '900', fontSize: '20px' }}>{i + 1}.</span>
+                                            <p style={{ fontSize: '18px', color: '#555', lineHeight: '1.6' }}><strong>{item.t}:</strong> {item.d}</p>
                                         </div>
                                     ))}
                                 </div>

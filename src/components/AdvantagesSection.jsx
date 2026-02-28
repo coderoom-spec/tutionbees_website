@@ -95,7 +95,7 @@ const AdvantagesSection = () => {
                                     {card.icon}
                                 </div>
                                 <h4 style={{ fontSize: '20px', fontWeight: '800', marginBottom: '15px', color: '#111' }}>{card.title}</h4>
-                                <p style={{ color: '#555', lineHeight: '1.6', fontSize: '15px' }}>{card.text}</p>
+                                <p style={{ color: '#555', lineHeight: '1.6', fontSize: '17px' }}>{card.text}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -166,7 +166,7 @@ const AdvantagesSection = () => {
                                 Navigate Your Exams with <br />
                                 <span style={{ color: 'var(--accent-red)' }}>Confidence and Absolute Clarity</span>
                             </h2>
-                            <p style={{ fontSize: '17px', color: '#555', lineHeight: '1.8', marginBottom: '35px' }}>
+                            <p style={{ fontSize: '18px', color: '#555', lineHeight: '1.8', marginBottom: '35px' }}>
                                 Turn the pressure of high-stakes testing into a showcase of your true potential. Our structured approach specializes in streamlining preparation for major school boards like <strong>CBSE and ICSE</strong>, as well as competitive challenges like <strong>SAT, JEE, and NEET</strong>. By focusing on deep conceptual understanding and extensive practice, we help students walk into every exam hall with absolute calmness.
                             </p>
                             <Link to="/book-free-demo" style={{ textDecoration: 'none' }}>
