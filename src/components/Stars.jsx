@@ -32,7 +32,7 @@ const Stars = () => {
     return (
         <section className="stars-section" id="stars" style={{ overflow: 'hidden' }}>
             <div className="container">
-                <h2 className="section-title">STARS OF TUITIONBEES</h2>
+                <h2 className="section-title">STARS OF TUITION BEES</h2>
                 <div className="carousel-wrapper">
                     <motion.div
                         className="stars-carousel"

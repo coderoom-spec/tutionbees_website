@@ -32,7 +32,7 @@ const Blog = () => {
                             <img
                                 src="/images/blog/blog_hero_illustration_1772121781699.png"
                                 alt="Blog Illustration"
-                                style={{ width: '100%', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.2))' }}
+                                style={{ width: '450px', height: '350px', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.2))' }}
                             />
                         </motion.div>
                     </div>

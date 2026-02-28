@@ -197,7 +197,8 @@ const SubjectsCurriculums = () => {
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                     <h2 className="section-title">
-                        BEST ONLINE TUTORING SERVICES
+                       Achieve Academic Success
+with Top-Notch Online Tutoring
                     </h2>
                     <h3 style={{
                         fontSize: '32px',
