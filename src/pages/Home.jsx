@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import TrustedBrands from '../components/TrustedBrands';
 import LeadForm from '../components/LeadForm';
 import Stars from '../components/Stars';
 import AdvantagesSection from '../components/AdvantagesSection';
@@ -14,6 +15,7 @@ const Home = () => {
     return (
         <>
             <Hero />
+            <TrustedBrands />
 
             {/* Featured Conversion Section */}
             <section className="home-conversion" style={{

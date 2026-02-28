@@ -36,7 +36,7 @@ const FAQItem = ({ question, answer }) => {
                         exit={{ height: 0, opacity: 0 }}
                         style={{ overflow: 'hidden', background: 'white' }}
                     >
-                        <div style={{ padding: '20px', fontSize: '15px', color: '#666', lineHeight: '1.6' }}>
+                        <div style={{ padding: '20px', fontSize: '17px', color: '#444', lineHeight: '1.6' }}>
                             {answer}
                         </div>
                     </motion.div>
@@ -139,7 +139,7 @@ const SubPage = () => {
                         <div>
                             <h2 style={{ fontSize: '28px', color: 'var(--accent-red)', marginBottom: '10px', textTransform: 'capitalize' }}>Online {title} Coaching Class</h2>
                             <h3 style={{ fontSize: '32px', fontWeight: '801', marginBottom: '20px' }}>1 on 1 Online Classes for all Subjects</h3>
-                            <p style={{ fontSize: '16px', color: '#555', lineHeight: '1.8', marginBottom: '25px' }}>
+                            <p style={{ fontSize: '18px', color: '#333', lineHeight: '1.8', marginBottom: '25px' }}>
                                 We offer a comprehensive curriculum designed to help students master {title} subjects. Our tutors are experts in the field, providing personalized attention that traditional classrooms often lack. We focus on building a strong foundation, encouraging critical thinking, and ensuring that students are well-prepared for their academic journey.
                             </p>
                             <button className="btn btn-accent" style={{ padding: '12px 30px' }}>BOOK A FREE DEMO</button>
@@ -163,8 +163,8 @@ const SubPage = () => {
                                 {prepPoints.map((point, i) => (
                                     <div key={i} style={{ display: 'flex', gap: '15px' }}>
                                         <span style={{ fontWeight: '800', color: '#333', minWidth: '20px' }}>{i + 1}.</span>
-                                        <p style={{ color: '#555', fontSize: '18px', lineHeight: '1.6' }}>
-                                            <strong style={{ color: '#333' }}>{point.t}:</strong> {point.d}
+                                        <p style={{ color: '#333', fontSize: '20px', lineHeight: '1.6' }}>
+                                            <strong style={{ color: '#111' }}>{point.t}:</strong> {point.d}
                                         </p>
                                     </div>
                                 ))}
@@ -236,7 +236,7 @@ const SubPage = () => {
                                     ].map((item, i) => (
                                         <div key={i} style={{ display: 'flex', gap: '15px' }}>
                                             <span style={{ color: 'var(--accent-red)', fontWeight: '900', fontSize: '20px' }}>{i + 1}.</span>
-                                            <p style={{ fontSize: '18px', color: '#555', lineHeight: '1.6' }}><strong>{item.t}:</strong> {item.d}</p>
+                                            <p style={{ fontSize: '20px', color: '#333', lineHeight: '1.6' }}><strong>{item.t}:</strong> {item.d}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -266,7 +266,7 @@ const SubPage = () => {
                             <div key={i} className="feature-card-detailed" style={{ background: 'white', padding: '50px 40px', borderRadius: '20px', boxShadow: '0 10px 40px rgba(0,0,0,0.05)', border: '1px solid #f0f0f0' }}>
                                 <div style={{ color: 'var(--accent-red)', marginBottom: '25px', display: 'flex', justifyContent: 'center' }}>{feature.icon}</div>
                                 <h4 style={{ fontSize: '22px', fontWeight: '801', marginBottom: '15px', color: 'var(--primary-blue)' }}>{feature.title}</h4>
-                                <p style={{ color: '#666', fontSize: '18px', marginBottom: '10px', lineHeight: '1.7' }}>{feature.desc}</p>
+                                <p style={{ color: '#444', fontSize: '20px', marginBottom: '10px', lineHeight: '1.7' }}>{feature.desc}</p>
                             </div>
                         ))}
                     </div>

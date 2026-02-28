@@ -36,7 +36,7 @@ const FAQItem = ({ question, answer }) => {
                         exit={{ height: 0, opacity: 0 }}
                         style={{ overflow: 'hidden', background: 'white' }}
                     >
-                        <div style={{ padding: '20px', fontSize: '15px', color: '#666', lineHeight: '1.6' }}>
+                        <div style={{ padding: '20px', fontSize: '17px', color: '#444', lineHeight: '1.6' }}>
                             {answer}
                         </div>
                     </motion.div>
@@ -53,7 +53,7 @@ const InfoTable = ({ data }) => (
                 {data.map((row, i) => (
                     <tr key={i} style={{ borderBottom: i === data.length - 1 ? 'none' : '1px solid #f0f0f0' }}>
                         <td style={{ padding: '18px 25px', fontWeight: '800', background: '#fcfcfc', color: '#111', width: '35%', fontSize: '15px', borderRight: '1px solid #f0f0f0' }}>{row.label}</td>
-                        <td style={{ padding: '18px 25px', color: '#555', fontSize: '15.5px', lineHeight: '1.5' }}>{row.value}</td>
+                        <td style={{ padding: '18px 25px', color: '#333', fontSize: '17px', lineHeight: '1.5' }}>{row.value}</td>
                     </tr>
                 ))}
             </tbody>
@@ -108,7 +108,7 @@ const ExamPage = () => {
                             <h1 style={{ fontSize: '48px', fontWeight: '900', margin: '20px 0', lineHeight: '1.1' }}>
                                 {data.hero.title}
                             </h1>
-                            <p style={{ fontSize: '17px', lineHeight: '1.6', opacity: 0.9, maxWidth: '550px' }}>
+                            <p style={{ fontSize: '19px', lineHeight: '1.6', opacity: 1, maxWidth: '550px' }}>
                                 {data.hero.description}
                             </p>
                         </motion.div>
@@ -132,7 +132,7 @@ const ExamPage = () => {
                     <div className="grid grid-2" style={{ alignItems: 'center', gap: '40px' }}>
                         <div>
                             <h2 style={{ fontSize: '32px', fontWeight: '900', color: '#F39200', marginBottom: '25px' }}>{data.intro.title}</h2>
-                            <p style={{ fontSize: '18px', color: '#444', lineHeight: '1.8' }}>
+                            <p style={{ fontSize: '20px', color: '#222', lineHeight: '1.8' }}>
                                 {data.intro.content}
                             </p>
                             <div style={{ marginTop: '30px' }}>
@@ -152,14 +152,14 @@ const ExamPage = () => {
                     <div className="grid grid-2" style={{ alignItems: 'flex-start', gap: '40px' }}>
                         <div>
                             <h2 style={{ fontSize: '32px', fontWeight: '900', color: '#111', marginBottom: '20px' }}>{data.keyFeatures.title}</h2>
-                            <p style={{ marginBottom: '30px', color: '#666' }}>{data.keyFeatures.intro}</p>
+                            <p style={{ marginBottom: '30px', color: '#444', fontSize: '18px' }}>{data.keyFeatures.intro}</p>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                 {data.keyFeatures.features.map((feature, i) => (
                                     <div key={i}>
                                         <h4 style={{ fontSize: '20px', fontWeight: '800', color: '#F39200', marginBottom: '8px' }}>
                                             {feature.title}
                                         </h4>
-                                        <p style={{ color: '#555', fontSize: '16px', lineHeight: '1.7' }}>
+                                        <p style={{ color: '#333', fontSize: '18px', lineHeight: '1.7' }}>
                                             {feature.content}
                                         </p>
                                     </div>
@@ -186,7 +186,7 @@ const ExamPage = () => {
                                 <h3 style={{ fontSize: '22px', fontWeight: '800', color: '#111', marginBottom: '25px' }}>{data.scoringSystem.title}</h3>
                                 <ul style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                                     {data.scoringSystem.points.map((p, i) => (
-                                        <li key={i} style={{ display: 'flex', gap: '12px', color: '#555', fontSize: '16px' }}>
+                                        <li key={i} style={{ display: 'flex', gap: '12px', color: '#333', fontSize: '18px' }}>
                                             <CheckCircle size={20} color="#F39200" style={{ flexShrink: 0, marginTop: '3px' }} />
                                             <span>{p}</span>
                                         </li>
@@ -199,7 +199,7 @@ const ExamPage = () => {
                             {data.additionalInfo.map((info, i) => (
                                 <div key={i} style={{ background: '#fcfcfc', padding: '30px', borderRadius: '12px', border: '1px solid #f0f0f0' }}>
                                     <h4 style={{ fontSize: '18px', fontWeight: '800', color: '#111', marginBottom: '12px' }}>{info.title}</h4>
-                                    <p style={{ color: '#666', fontSize: '15px', lineHeight: '1.7' }}>{info.content}</p>
+                                    <p style={{ color: '#444', fontSize: '17px', lineHeight: '1.7' }}>{info.content}</p>
                                 </div>
                             ))}
                         </div>
@@ -234,7 +234,7 @@ const ExamPage = () => {
                                     <img src={whyChooseIcons[i % whyChooseIcons.length]} alt={card.title} style={{ width: '60px', height: '60px', objectFit: 'contain' }} />
                                 </div>
                                 <h4 style={{ fontSize: '22px', fontWeight: '800', marginBottom: '15px', color: '#111' }}>{card.title}</h4>
-                                <p style={{ color: '#555', fontSize: '17px', lineHeight: '1.7' }}>
+                                <p style={{ color: '#333', fontSize: '19px', lineHeight: '1.7' }}>
                                     {card.content}
                                 </p>
                             </div>

@@ -5,22 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="main-footer" style={{ background: '#1a1a1a', color: '#999', paddingTop: '0' }}>
-            {/* Top Institutions Logos Section */}
-            <div style={{ background: 'white', padding: '40px 0', marginBottom: '60px' }}>
-                <div className="container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '40px' }}>
-                    <img src="/cbse.webp" alt="CBSE" style={{ height: '50px', objectFit: 'contain' }} />
-                    <img src="/icse3.webp" alt="CISCE" style={{ height: '60px', objectFit: 'contain' }} />
-                    <img src="/isc-logo.webp" alt="ISC" style={{ height: '60px', objectFit: 'contain' }} />
-                    <img src="/gcse_top.webp" alt="GCSE" style={{ height: '50px', objectFit: 'contain' }} />
-                    <img src="/ib.webp" alt="IB" style={{ height: '50px', objectFit: 'contain' }} />
-                    <img src="/us.webp" alt="US Curriculum" style={{ height: '40px', objectFit: 'contain' }} />
-                    <img src="/canadian1.webp" alt="Canadian Curriculum" style={{ height: '40px', objectFit: 'contain' }} />
-                    <img src="/australia.webp" alt="Australian Curriculum" style={{ height: '40px', objectFit: 'contain' }} />
-                    <img src="/uk.webp" alt="UK Curriculum" style={{ height: '40px', objectFit: 'contain' }} />
-                </div>
-            </div>
-
-            <div className="container footer-grid" style={{ paddingBottom: '40px' }}>
+            <div className="container footer-grid" style={{ paddingBottom: '40px', paddingTop: '60px' }}>
                 <div className="footer-col about-col">
                     <Link to="/" style={{ display: 'inline-block', marginBottom: '20px', background: 'white', padding: '8px', borderRadius: '4px' }}>
                         <img
