@@ -15,6 +15,7 @@ const examsList = [
     { title: "IELTS", icon: <GraduationCap size={32} />, path: "/exams/ielts" },
     { title: "TOEFL", icon: <GraduationCap size={32} />, path: "/exams/toefl" },
     { title: "NEET", icon: <Award size={32} />, path: "/exams/neet" },
+    { title: "JEE", icon: <Award size={32} />, path: "/exams/jee" },
 ];
 
 const ExamsSection = () => {
