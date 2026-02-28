@@ -19,7 +19,7 @@ const Home = () => {
 
             {/* Featured Conversion Section */}
             <section className="home-conversion" style={{
-                background: 'linear-gradient(135deg, var(--accent-red) 0%, #4a2c00 100%)',
+                background: 'linear-gradient(90deg, #fd6730, #ff930f)',
                 padding: '80px 0',
                 position: 'relative',
                 overflow: 'hidden',

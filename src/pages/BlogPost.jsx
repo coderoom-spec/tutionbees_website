@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone } from 'lucide-react';
 import { blogPosts } from '../data/blogData';
 
 const BlogPost = () => {
@@ -52,28 +52,11 @@ const BlogPost = () => {
                 </div>
             </section>
 
-            <div className="container" style={{ padding: '60px 0' }}>
+            <div className="container blog-post-container" style={{ padding: '40px 20px 80px' }}>
                 <div className="blog-post-layout" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 350px', gap: '40px' }}>
 
                     {/* Main Content Column */}
                     <main className="blog-post-main">
-                        <div className="post-meta" style={{
-                            display: 'flex',
-                            gap: '20px',
-                            marginBottom: '30px',
-                            padding: '15px 20px',
-                            background: '#fcfcfc',
-                            borderRadius: '8px',
-                            borderLeft: '4px solid var(--accent-red)'
-                        }}>
-                            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', fontWeight: '700', color: 'var(--accent-red)' }}>
-                                <Calendar size={16} /> {post.date.toUpperCase()}
-                            </span>
-                            <span style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px', fontWeight: '700', color: 'var(--accent-red)' }}>
-                                <User size={16} /> {post.author.toUpperCase()}
-                            </span>
-                        </div>
-
                         <div className="post-featured-image" style={{ marginBottom: '40px' }}>
                             <img
                                 src={post.img}
@@ -91,7 +74,7 @@ const BlogPost = () => {
                             <div className="post-body" style={{
                                 fontSize: '17px',
                                 lineHeight: '1.8',
-                                color: '#444',
+                                color: '#000',
                                 whiteSpace: 'pre-wrap'
                             }}>
                                 {post.description}
@@ -160,10 +143,6 @@ const BlogPost = () => {
                                             }}>
                                                 {rPost.title}
                                             </h5>
-                                            <div style={{ fontSize: '11px', color: '#999', display: 'flex', gap: '10px' }}>
-                                                <span style={{ display: 'flex', alignItems: 'center', gap: '3px' }}><Calendar size={10} /> {rPost.date}</span>
-                                                <span style={{ display: 'flex', alignItems: 'center', gap: '3px' }}><User size={10} /> {rPost.author}</span>
-                                            </div>
                                         </div>
                                     </Link>
                                 ))}
@@ -185,7 +164,7 @@ const BlogPost = () => {
                         </div>
                     </aside>
                 </div>
-            </div>
+            </div >
 
             <style dangerouslySetInnerHTML={{
                 __html: `
@@ -196,9 +175,12 @@ const BlogPost = () => {
                     .blog-post-sidebar {
                         margin-top: 40px;
                     }
+                    .blog-post-container {
+                        padding: 30px 15px 100px !important;
+                    }
                 }
             `}} />
-        </div>
+        </div >
     );
 };
 

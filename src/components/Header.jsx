@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X, Mail, Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
-import { Mail, Phone } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -27,6 +26,7 @@ const Header = () => {
 
     const navLinks = (isMobile = false) => (
         <ul className={isMobile ? "mobile-nav" : ""}>
+            {isMobile && <li><Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link></li>}
             <li className={`has-dropdown ${isMobile && activeMobileSubmenu === 'about' ? 'open' : ''}`}>
                 <a href="#" onClick={(e) => {
                     if (isMobile) {
@@ -34,11 +34,11 @@ const Header = () => {
                         toggleMobileSubmenu('about');
                     }
                 }}>
-                    ABOUT <ChevronDown size={14} />
+                    About {isMobile ? (activeMobileSubmenu === 'about' ? '−' : '+') : <ChevronDown size={14} />}
                 </a>
                 <ul className="dropdown">
-                    <li><Link to="/who-we-are" onClick={() => setIsMobileMenuOpen(false)}>WHO WE ARE</Link></li>
-                    <li><Link to="/contact-us" onClick={() => setIsMobileMenuOpen(false)}>CONTACT US</Link></li>
+                    <li><Link to="/who-we-are" onClick={() => setIsMobileMenuOpen(false)}>Who We Are</Link></li>
+                    <li><Link to="/contact-us" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
                 </ul>
             </li>
             <li className={`has-mega ${isMobile && activeMobileSubmenu === 'curriculum' ? 'open' : ''}`}>
@@ -48,21 +48,21 @@ const Header = () => {
                         toggleMobileSubmenu('curriculum');
                     }
                 }}>
-                    CURRICULUM <ChevronDown size={14} />
+                    Curriculum {isMobile ? (activeMobileSubmenu === 'curriculum' ? '−' : '+') : <ChevronDown size={14} />}
                 </a>
                 <div className="mega-menu">
                     <ul className="mega-list">
                         <li><Link to="/curriculum/cbse" onClick={() => setIsMobileMenuOpen(false)}>CBSE</Link></li>
                         <li><Link to="/curriculum/icse-isc" onClick={() => setIsMobileMenuOpen(false)}>ICSE/ISC</Link></li>
                         <li><Link to="/curriculum/igcse" onClick={() => setIsMobileMenuOpen(false)}>IGCSE</Link></li>
-                        <li><Link to="/curriculum/ib" onClick={() => setIsMobileMenuOpen(false)}>INTERNATIONAL BACCALAUREATE - IB</Link></li>
-                        <li><Link to="/curriculum/us" onClick={() => setIsMobileMenuOpen(false)}>US CURRICULUM</Link></li>
-                        <li><Link to="/curriculum/uk" onClick={() => setIsMobileMenuOpen(false)}>UK CURRICULUM</Link></li>
-                        <li><Link to="/curriculum/australian" onClick={() => setIsMobileMenuOpen(false)}>AUSTRALIAN CURRICULUM</Link></li>
-                        <li><Link to="/curriculum/singapore" onClick={() => setIsMobileMenuOpen(false)}>SINGAPORE CURRICULUM</Link></li>
-                        <li><Link to="/curriculum/canadian" onClick={() => setIsMobileMenuOpen(false)}>CANADIAN CURRICULUM</Link></li>
-                        <li><Link to="/curriculum/a-level" onClick={() => setIsMobileMenuOpen(false)}>AS AND A LEVEL</Link></li>
-                        <li><Link to="/curriculum/caie-edexcel" onClick={() => setIsMobileMenuOpen(false)}>CAIE & EDEXCEL</Link></li>
+                        <li><Link to="/curriculum/ib" onClick={() => setIsMobileMenuOpen(false)}>International Baccalaureate - IB</Link></li>
+                        <li><Link to="/curriculum/us" onClick={() => setIsMobileMenuOpen(false)}>US Curriculum</Link></li>
+                        <li><Link to="/curriculum/uk" onClick={() => setIsMobileMenuOpen(false)}>UK Curriculum</Link></li>
+                        <li><Link to="/curriculum/australian" onClick={() => setIsMobileMenuOpen(false)}>Australian Curriculum</Link></li>
+                        <li><Link to="/curriculum/singapore" onClick={() => setIsMobileMenuOpen(false)}>Singapore Curriculum</Link></li>
+                        <li><Link to="/curriculum/canadian" onClick={() => setIsMobileMenuOpen(false)}>Canadian Curriculum</Link></li>
+                        <li><Link to="/curriculum/a-level" onClick={() => setIsMobileMenuOpen(false)}>AS and A Level</Link></li>
+                        <li><Link to="/curriculum/caie-edexcel" onClick={() => setIsMobileMenuOpen(false)}>CAIE & Edexcel</Link></li>
                     </ul>
                 </div>
             </li>
@@ -73,7 +73,7 @@ const Header = () => {
                         toggleMobileSubmenu('subjects');
                     }
                 }}>
-                    SUBJECTS <ChevronDown size={14} />
+                    Subjects {isMobile ? (activeMobileSubmenu === 'subjects' ? '−' : '+') : <ChevronDown size={14} />}
                 </a>
                 <div className="mega-menu" style={{ width: '1000px' }}>
                     <div className="mega-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
@@ -113,17 +113,17 @@ const Header = () => {
                         toggleMobileSubmenu('exams');
                     }
                 }}>
-                    EXAMS <ChevronDown size={14} />
+                    Exams {isMobile ? (activeMobileSubmenu === 'exams' ? '−' : '+') : <ChevronDown size={14} />}
                 </a>
                 <div className="mega-menu">
                     <ul className="mega-list">
                         <li><Link to="/exams/psat" onClick={() => setIsMobileMenuOpen(false)}>PSAT Exam</Link></li>
                         <li><Link to="/exams/sat" onClick={() => setIsMobileMenuOpen(false)}>SAT Exam</Link></li>
                         <li><Link to="/exams/act" onClick={() => setIsMobileMenuOpen(false)}>ACT Exam</Link></li>
-                        <li><Link to="/exams/ap" onClick={() => setIsMobileMenuOpen(false)}>AP TESTS</Link></li>
-                        <li><Link to="/exams/ssat" onClick={() => setIsMobileMenuOpen(false)}>SSAT EXAM</Link></li>
-                        <li><Link to="/exams/11-plus" onClick={() => setIsMobileMenuOpen(false)}>11 + EXAM</Link></li>
-                        <li><Link to="/exams/13-plus" onClick={() => setIsMobileMenuOpen(false)}>13 + EXAM</Link></li>
+                        <li><Link to="/exams/ap" onClick={() => setIsMobileMenuOpen(false)}>AP Tests</Link></li>
+                        <li><Link to="/exams/ssat" onClick={() => setIsMobileMenuOpen(false)}>SSAT Exam</Link></li>
+                        <li><Link to="/exams/11-plus" onClick={() => setIsMobileMenuOpen(false)}>11+ Exam</Link></li>
+                        <li><Link to="/exams/13-plus" onClick={() => setIsMobileMenuOpen(false)}>13+ Exam</Link></li>
                         <li><Link to="/exams/naplan" onClick={() => setIsMobileMenuOpen(false)}>NAPLAN</Link></li>
                         <li><Link to="/exams/ielts" onClick={() => setIsMobileMenuOpen(false)}>IELTS</Link></li>
                         <li><Link to="/exams/toefl" onClick={() => setIsMobileMenuOpen(false)}>TOEFL</Link></li>
@@ -138,10 +138,10 @@ const Header = () => {
                         toggleMobileSubmenu('study-portal');
                     }
                 }}>
-                    STUDY PORTAL <ChevronDown size={14} />
+                    Study Portal {isMobile ? (activeMobileSubmenu === 'study-portal' ? '−' : '+') : <ChevronDown size={14} />}
                 </a>
                 <ul className="dropdown">
-                    <li><Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>BLOG</Link></li>
+                    <li><Link to="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link></li>
                 </ul>
             </li>
         </ul>
@@ -150,22 +150,16 @@ const Header = () => {
     return (
         <>
             {/* Top Contact Bar */}
-            <div className={`top-bar ${isScrolled ? 'hidden' : ''}`} style={{
-                background: 'var(--primary-blue)',
-                color: 'white',
-                padding: '8px 0',
-                fontSize: '13px',
-                transition: 'all 0.3s ease'
-            }}>
+            <div className={`top-bar ${isScrolled ? 'hidden' : ''}`}>
                 <div className="container" style={{ display: 'flex', justifyContent: 'flex-end', gap: '25px' }}>
-                    <a href="tel:+918122867303" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <a href="tel:+918122867303">
                         <Phone size={14} /> +91 81228 67303
                     </a>
-                    <a href="mailto:info@tutionbees.com" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <a href="mailto:info@tutionbees.com">
                         <Mail size={14} /> info@tutionbees.com
                     </a>
-                    <a href="https://wa.me/918122867303?text=Hello!%20I%20would%20like%20to%20enquire%20about%20your%20online%20tutoring%20services." target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '18px', height: '18px' }} /> WhatsApp Us
+                    <a href="https://wa.me/918122867303?text=Hello!%20I%20would%20like%20to%20enquire%20about%20your%20online%20tutoring%20services." target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="wa-icon" /> WhatsApp Us
                     </a>
                 </div>
             </div>
@@ -201,13 +195,74 @@ const Header = () => {
                 </div>
 
                 {/* Mobile Menu Overlay */}
-                {isMobileMenuOpen && (
-                    <div className="mobile-menu-overlay">
-                        <nav className="mobile-nav-container">
-                            {navLinks(true)}
-                        </nav>
-                    </div>
-                )}
+                <AnimatePresence>
+                    {isMobileMenuOpen && (
+                        <motion.div
+                            initial={{ x: '100%' }}
+                            animate={{ x: 0 }}
+                            exit={{ x: '100%' }}
+                            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+                            className="mobile-menu-overlay"
+                        >
+                            <div className="mobile-menu-header" style={{
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                padding: '20px',
+                                borderBottom: '1px solid #f0f0f0',
+                                background: 'white'
+                            }}>
+                                <img src="/Tution bees logo.jpg" alt="Logo" style={{ height: '35px' }} />
+                                <button
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    style={{
+                                        background: '#f5f5f5',
+                                        border: 'none',
+                                        borderRadius: '50%',
+                                        width: '40px',
+                                        height: '40px',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        cursor: 'pointer'
+                                    }}
+                                >
+                                    <X size={24} color="#333" />
+                                </button>
+                            </div>
+
+                            <div className="mobile-menu-top-info" style={{
+                                background: '#fafafa',
+                                padding: '20px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '12px'
+                            }}>
+                                <a href="tel:+918122867303" style={{ fontSize: '14px', color: '#111', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '600' }}>
+                                    <Phone size={16} /> +91 81228 67303
+                                </a>
+                                <a href="mailto:info@tutionbees.com" style={{ fontSize: '14px', color: '#111', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '600' }}>
+                                    <Mail size={16} /> info@tutionbees.com
+                                </a>
+                            </div>
+
+                            <nav className="mobile-nav-container">
+                                {navLinks(true)}
+                            </nav>
+
+                            <div style={{ padding: '30px 20px' }}>
+                                <Link
+                                    to="/book-free-demo"
+                                    className="btn btn-accent"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    style={{ width: '100%', textAlign: 'center', borderRadius: '12px', padding: '18px', fontSize: '16px' }}
+                                >
+                                    BOOK A FREE DEMO <ArrowRight size={18} style={{ marginLeft: '10px' }} />
+                                </Link>
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
 
                 {/* Fixed Mobile Footer CTA */}
                 {!isMobileMenuOpen && (

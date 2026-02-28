@@ -25,17 +25,14 @@ const Hero = () => {
                         <Link to="/book-free-demo" className="btn btn-accent" style={{ padding: '0 30px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px' }}>BOOK A FREE DEMO</Link>
                         <Link to="/contact-us" className="btn btn-outline" style={{ padding: '0 30px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '16px' }}>CONTACT US</Link>
                     </div>
-                    <div className="reviews-badges" style={{ marginTop: '40px', borderTop: '1px solid #eee', paddingTop: '30px', display: 'flex', gap: '30px' }}>
-                        <div className="badge">
+                    <div className="reviews-badges" style={{ marginTop: '40px', borderTop: '1px solid #eee', paddingTop: '30px', display: 'flex', justifyContent: 'center' }}>
+                        <div className="badge" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" style={{ height: '22px', marginBottom: '8px' }} />
-                            <span>Reviews 5/5</span>
-                            <div className="stars">★★★★★</div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                <span style={{ fontWeight: '800', fontSize: '18px' }}>Reviews 5/5</span>
+                                <div className="stars" style={{ fontSize: '18px' }}>★★★★★</div>
+                            </div>
                         </div>
-                        <div className="badge">
-                            <img src="/icse3.webp" alt="CISCE" style={{ height: '50px', marginBottom: '8px', objectFit: 'contain' }} />
-                            <span style={{ fontSize: '12px' }}>Certified Curriculum</span>
-                        </div>
-
                     </div>
                 </motion.div>
 

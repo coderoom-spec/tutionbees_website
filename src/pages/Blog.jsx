@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { blogPosts } from '../data/blogData';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +32,12 @@ const Blog = () => {
                             <img
                                 src="/images/blog/blog_hero_illustration_1772121781699.png"
                                 alt="Blog Illustration"
-                                style={{ width: '450px', height: '350px', filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.2))' }}
+                                style={{
+                                    maxWidth: '450px',
+                                    width: '100%',
+                                    height: 'auto',
+                                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.2))'
+                                }}
                             />
                         </motion.div>
                     </div>
@@ -60,10 +65,6 @@ const Blog = () => {
                                         <img src={post.img} alt={post.title} />
                                     </div>
                                     <div className="blog-card-body">
-                                        <div className="blog-card-meta">
-                                            <span><Calendar className="meta-icon" size={14} /> {post.date}</span>
-                                            <span><User className="meta-icon" size={14} /> {post.author}</span>
-                                        </div>
                                         <h3 style={{ fontSize: '18px', fontWeight: '800' }}>{post.title}</h3>
                                         <div style={{ marginTop: '15px', display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent-red)', fontWeight: '700', fontSize: '14px' }}>
                                             Read More <ArrowRight size={14} />

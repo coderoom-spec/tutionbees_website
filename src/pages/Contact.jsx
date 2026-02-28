@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 
 const Contact = () => {
@@ -49,12 +49,19 @@ const Contact = () => {
                                         <p>Chat with us now</p>
                                     </div>
                                 </a>
+                                <a href="https://share.google/Ftdyw9uUPwoOVGLKA" target="_blank" rel="noopener noreferrer" className="contact-item" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                    <div className="icon-circle"><MapPin size={24} /></div>
+                                    <div>
+                                        <h4>Get Directions</h4>
+                                        <p>Find us on Map</p>
+                                    </div>
+                                </a>
                             </div>
 
                             <div className="map-placeholder">
                                 <div className="map-box">
                                     <iframe
-                                        src="https://maps.google.com/maps?q=GM%20Complex,%20Mettupalayam%20Rd,%20Themaiyan%20Street,%20Koundampalayam,%20Coimbatore,%20Tamil%20Nadu%20641030&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                                        src="https://www.google.com/maps?q=2nd+Floor+GM+Complex+Mettupalayam+Road+Koundampalayam+Coimbatore+641030&output=embed"
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
