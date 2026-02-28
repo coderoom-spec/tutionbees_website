@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, ClipboardCheck, GraduationCap, CheckCircle } from 'lucide-react';
+import {
+    Award, ClipboardCheck, GraduationCap, CheckCircle, BookOpen,
+    Medal, School, Library, FileDigit, Globe2, Quote, HeartPulse
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const examsList = [
@@ -8,14 +11,14 @@ const examsList = [
     { title: "SAT Exam", icon: <GraduationCap size={32} />, path: "/exams/sat" },
     { title: "ACT Exam", icon: <ClipboardCheck size={32} />, path: "/exams/act" },
     { title: "AP TESTS", icon: <CheckCircle size={32} />, path: "/exams/ap" },
-    { title: "SSAT EXAM", icon: <Award size={32} />, path: "/exams/ssat" },
-    { title: "11 + EXAM", icon: <GraduationCap size={32} />, path: "/exams/11-plus" },
-    { title: "13 + EXAM", icon: <GraduationCap size={32} />, path: "/exams/13-plus" },
-    { title: "NAPLAN", icon: <ClipboardCheck size={32} />, path: "/exams/naplan" },
-    { title: "IELTS", icon: <GraduationCap size={32} />, path: "/exams/ielts" },
-    { title: "TOEFL", icon: <GraduationCap size={32} />, path: "/exams/toefl" },
-    { title: "NEET", icon: <Award size={32} />, path: "/exams/neet" },
-    { title: "JEE", icon: <Award size={32} />, path: "/exams/jee" },
+    { title: "SSAT EXAM", icon: <Medal size={32} />, path: "/exams/ssat" },
+    { title: "11 + EXAM", icon: <School size={32} />, path: "/exams/11-plus" },
+    { title: "13 + EXAM", icon: <Library size={32} />, path: "/exams/13-plus" },
+    { title: "NAPLAN", icon: <FileDigit size={32} />, path: "/exams/naplan" },
+    { title: "IELTS", icon: <Globe2 size={32} />, path: "/exams/ielts" },
+    { title: "TOEFL", icon: <Quote size={32} />, path: "/exams/toefl" },
+    { title: "NEET", icon: <HeartPulse size={32} />, path: "/exams/neet" },
+    { title: "JEE", icon: <BookOpen size={32} />, path: "/exams/jee" },
 ];
 
 const ExamsSection = () => {

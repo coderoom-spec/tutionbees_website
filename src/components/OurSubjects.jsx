@@ -1,26 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Calculator, Beaker, Globe, Languages, Cpu, PieChart, Briefcase } from 'lucide-react';
+import {
+    Calculator, Microscope, BookText, Globe, Atom, FlaskConical, Dna, Cpu,
+    Sigma, Activity, BarChart3, Triangle, TrendingUp, Coins, Briefcase,
+    MessageCircle, MessagesSquare, Languages
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const subjectsList = [
     { title: "Math Tuition", icon: <Calculator size={24} />, path: "/subjects/math" },
-    { title: "Science Tuition", icon: <Beaker size={24} />, path: "/subjects/science" },
-    { title: "English Tuition", icon: <BookOpen size={24} />, path: "/subjects/english" },
+    { title: "Science Tuition", icon: <Microscope size={24} />, path: "/subjects/science" },
+    { title: "English Tuition", icon: <BookText size={24} />, path: "/subjects/english" },
     { title: "Social Studies Tuition", icon: <Globe size={24} />, path: "/subjects/social-studies" },
-    { title: "Physics Tuition", icon: <Beaker size={24} />, path: "/subjects/physics" },
-    { title: "Chemistry Tuition", icon: <Beaker size={24} />, path: "/subjects/chemistry" },
-    { title: "Biology Tuition", icon: <Beaker size={24} />, path: "/subjects/biology" },
+    { title: "Physics Tuition", icon: <Atom size={24} />, path: "/subjects/physics" },
+    { title: "Chemistry Tuition", icon: <FlaskConical size={24} />, path: "/subjects/chemistry" },
+    { title: "Biology Tuition", icon: <Dna size={24} />, path: "/subjects/biology" },
     { title: "Computer Science Tuition", icon: <Cpu size={24} />, path: "/subjects/computer-science" },
-    { title: "Pre-Algebra / Algebra Tuition", icon: <Calculator size={24} />, path: "/subjects/pre-algebra-algebra" },
-    { title: "Pre-Calculus / Calculus Tuition", icon: <Calculator size={24} />, path: "/subjects/pre-calculus-calculus" },
-    { title: "Statistics Tuition", icon: <PieChart size={24} />, path: "/subjects/statistics" },
-    { title: "Trigonometry Tuition", icon: <Calculator size={24} />, path: "/subjects/trigonometry" },
-    { title: "Economics Tuition", icon: <PieChart size={24} />, path: "/subjects/economics" },
-    { title: "Accountancy Tuition", icon: <Briefcase size={24} />, path: "/subjects/accountancy" },
+    { title: "Pre-Algebra / Algebra Tuition", icon: <Sigma size={24} />, path: "/subjects/pre-algebra-algebra" },
+    { title: "Pre-Calculus / Calculus Tuition", icon: <Activity size={24} />, path: "/subjects/pre-calculus-calculus" },
+    { title: "Statistics Tuition", icon: <BarChart3 size={24} />, path: "/subjects/statistics" },
+    { title: "Trigonometry Tuition", icon: <Triangle size={24} />, path: "/subjects/trigonometry" },
+    { title: "Economics Tuition", icon: <TrendingUp size={24} />, path: "/subjects/economics" },
+    { title: "Accountancy Tuition", icon: <Coins size={24} />, path: "/subjects/accountancy" },
     { title: "Business Studies Tuition", icon: <Briefcase size={24} />, path: "/subjects/business-studies" },
-    { title: "French Tuition", icon: <Languages size={24} />, path: "/subjects/french" },
-    { title: "Spanish Tuition", icon: <Languages size={24} />, path: "/subjects/spanish" },
+    { title: "French Tuition", icon: <MessageCircle size={24} />, path: "/subjects/french" },
+    { title: "Spanish Tuition", icon: <MessagesSquare size={24} />, path: "/subjects/spanish" },
     { title: "Hindi Tuition", icon: <Languages size={24} />, path: "/subjects/hindi" },
 ];
 
