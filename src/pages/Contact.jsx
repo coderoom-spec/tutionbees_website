@@ -26,11 +26,11 @@ const Contact = () => {
                             <p>Have questions about our tutoring programs? Our team is available 24/7 to assist you. Fill out the form or reach us via our contact details.</p>
 
                             <div className="contact-info-grid">
-                                <a href="mailto:info@tutionbees.com" className="contact-item" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <a href="mailto:info@tuitionbees.com" className="contact-item" style={{ textDecoration: 'none', color: 'inherit' }}>
                                     <div className="icon-circle"><Mail size={24} /></div>
                                     <div>
                                         <h4>Email Us</h4>
-                                        <p>info@tutionbees.com</p>
+                                        <p>info@tuitionbees.com</p>
                                     </div>
                                 </a>
                                 <a href="tel:+918122867303" className="contact-item" style={{ textDecoration: 'none', color: 'inherit' }}>

@@ -80,9 +80,9 @@ const Footer = () => {
                         <Phone size={24} color="var(--accent-red)" />
                         <span style={{ fontSize: '14px', fontWeight: '600', color: 'white' }}>+91 81228 67303</span>
                     </a>
-                    <a href="mailto:info@tutionbees.com" style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
+                    <a href="mailto:info@tuitionbees.com" style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
                         <Mail size={24} color="var(--accent-red)" />
-                        <span style={{ fontSize: '14px', fontWeight: '600', color: 'white' }}>info@tutionbees.com</span>
+                        <span style={{ fontSize: '14px', fontWeight: '600', color: 'white' }}>info@tuitionbees.com</span>
                     </a>
                     <a href="https://wa.me/918122867303?text=Hello!%20I%20would%20like%20to%20enquire%20about%20your%20online%20tutoring%20services." target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '15px', textDecoration: 'none' }}>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '32px', height: '32px' }} />
@@ -96,7 +96,7 @@ const Footer = () => {
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
                     <p style={{ fontSize: '13px', margin: 0 }}>&copy; {new Date().getFullYear()} Tuition Bees Online Tutoring. All rights reserved.</p>
                     <div className="social-links" style={{ display: 'flex', gap: '25px', alignItems: 'center' }}>
-                        <a href="#" style={{ color: 'white' }}><Facebook size={20} /></a>
+                    
                         <a href="#" style={{ color: 'white' }}><Youtube size={20} /></a>
                         <a href="#" style={{ color: 'white' }}><Instagram size={20} /></a>
                     </div>

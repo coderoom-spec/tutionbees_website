@@ -156,8 +156,8 @@ const Header = () => {
                     <a href="tel:+918122867303">
                         <Phone size={14} /> +91 81228 67303
                     </a>
-                    <a href="mailto:info@tutionbees.com">
-                        <Mail size={14} /> info@tutionbees.com
+                    <a href="mailto:info@tuitionbees.com">
+                        <Mail size={14} /> info@tuitionbees.com
                     </a>
                     <a href="https://wa.me/918122867303?text=Hello!%20I%20would%20like%20to%20enquire%20about%20your%20online%20tutoring%20services." target="_blank" rel="noopener noreferrer">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="wa-icon" /> WhatsApp Us
@@ -242,8 +242,8 @@ const Header = () => {
                                 <a href="tel:+918122867303" style={{ fontSize: '14px', color: '#111', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '600' }}>
                                     <Phone size={16} /> +91 81228 67303
                                 </a>
-                                <a href="mailto:info@tutionbees.com" style={{ fontSize: '14px', color: '#111', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '600' }}>
-                                    <Mail size={16} /> info@tutionbees.com
+                                <a href="mailto:info@tuitionbees.com" style={{ fontSize: '14px', color: '#111', display: 'flex', alignItems: 'center', gap: '10px', fontWeight: '600' }}>
+                                    <Mail size={16} /> info@tuitionbees.com
                                 </a>
                             </div>
 
