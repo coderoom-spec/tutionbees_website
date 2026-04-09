@@ -88,6 +88,20 @@ const Footer = () => {
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '32px', height: '32px' }} />
                         <span style={{ fontSize: '14px', fontWeight: '600', color: 'white' }}>WhatsApp Support</span>
                     </a>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                        <span style={{ fontSize: '14px', fontWeight: '600', color: 'white' }}>Follow Us:</span>
+                        <div style={{ display: 'flex', gap: '15px' }}>
+                            <a href="https://www.facebook.com/tuitionbees" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+                                <Facebook size={24} />
+                            </a>
+                            <a href="https://www.instagram.com/tuitionbees?igsh=dWdqeDl0cmdma2Iz" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+                                <Instagram size={24} />
+                            </a>
+                            <a href="#" style={{ color: 'white' }}>
+                                <Youtube size={24} />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -98,7 +112,8 @@ const Footer = () => {
                     <div className="social-links" style={{ display: 'flex', gap: '25px', alignItems: 'center' }}>
                     
                         <a href="#" style={{ color: 'white' }}><Youtube size={20} /></a>
-                        <a href="#" style={{ color: 'white' }}><Instagram size={20} /></a>
+                        <a href="https://www.facebook.com/tuitionbees" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><Facebook size={20} /></a>
+                        <a href="https://www.instagram.com/tuitionbees?igsh=dWdqeDl0cmdma2Iz" style={{ color: 'white' }}><Instagram size={20} /></a>
                     </div>
                 </div>
             </div>

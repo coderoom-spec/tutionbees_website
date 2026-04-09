@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, Mail, Phone, ArrowRight } from 'lucide-react';
+import { ChevronDown, Menu, X, Mail, Phone, ArrowRight, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -161,6 +161,9 @@ const Header = () => {
                     </a>
                     <a href="https://wa.me/918122867303?text=Hello!%20I%20would%20like%20to%20enquire%20about%20your%20online%20tutoring%20services." target="_blank" rel="noopener noreferrer">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="wa-icon" /> WhatsApp Us
+                    </a>
+                    <a href="https://www.instagram.com/tuitionbees?igsh=dWdqeDl0cmdma2Iz" target="_blank" rel="noopener noreferrer">
+                        <Instagram size={14} /> Instagram
                     </a>
                 </div>
             </div>
